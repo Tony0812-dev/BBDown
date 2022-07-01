@@ -32,13 +32,13 @@ jobs:
         uses: actions/upload-artifact@v1.0.0
         with:
           name: BBDown_win-x64
-          path: artifact-x64\BBDown.exe
+          path: ./
 
       - name: Upload Artifact[win-arm64]
         uses: actions/upload-artifact@v1.0.0
         with:
           name: BBDown_win-arm64
-          path: artifact-arm64\BBDown.exe
+          path: ./
   
 
   build-linux-x64:
