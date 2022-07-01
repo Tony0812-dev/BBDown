@@ -25,8 +25,8 @@ jobs:
           dotnet-version: ${{ env.DOTNET_SDK_VERSION }}
           include-prerelease: true
 
-      - run: dotnet publish BBDown -r win-x64 -c Release -o artifact-x64
-      - run: dotnet publish BBDown -r win-arm64 -c Release -o artifact-arm64
+      - run: dotnet publish BBDown -r win-x64 -c Release -o artifact-x64 --self-contained true
+      - run: dotnet publish BBDown -r win-arm64 -c Release -o artifact-arm64 --self-contained true
 
       - name: Upload Artifact[win-x64]
         uses: actions/upload-artifact@v1.0.0
