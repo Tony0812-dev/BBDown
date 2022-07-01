@@ -290,8 +290,6 @@ namespace BBDown
             var ver = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
             Console.Write($"BBDown version {ver.Major}.{ver.Minor}.{ver.Build}, Bilibili Downloader.\r\n");
             Console.ResetColor();
-            Console.Write("欢迎到讨论区交流：\r\n" +
-                "https://github.com/nilaoda/BBDown/discussions\r\n");
             Console.WriteLine();
 
             var newArgsList = new List<string>();
