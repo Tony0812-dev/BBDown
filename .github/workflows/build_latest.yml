@@ -25,7 +25,7 @@ jobs:
           dotnet-version: 6.0.300
           include-prerelease: true
 
-      - run: dotnet publish BBDown -r win-x64 -c Debug -o artifact-x64 --self-contained true -v
+      - run: dotnet publish BBDown -r win-x64 -c Debug -o artifact-x64 --verbose
       - run: dotnet publish BBDown -r win-arm64 -c Debug -o artifact-arm64 --self-contained true -v
 
       - name: Upload Artifact[win-x64]
